@@ -1,0 +1,124 @@
+
+.carousel {
+  border-radius: 25px;
+  width:400px;
+  height:400px;
+  margin:auto;
+}
+
+.first-row{
+	padding-top: 10%;
+}
+
+.row {
+	margin-bottom:15px;
+}
+
+
+.imgF {
+	width: 95%;
+	height:20vw;
+	object-fit: cover;
+}
+
+ 
+#scroll{
+ 
+  position:absolute;
+  left: 12%;
+  overflow: auto;
+  width: 1000px;
+  height: 40px;
+
+}
+
+.carousel-indicators {
+  bottom:-150px;
+}
+
+.btn {
+	border-radius: 0;
+}
+
+body {
+	font-family: roboto;
+}
+
+h5 {
+	
+	font-family: "roboto";
+	font-weight: 700;
+	font-size: 30px;
+	margin-top: : 500px;
+}
+li {
+	font-family: roboto;
+	font-size: 16px;
+	text-align: left;
+}
+
+
+.navlogo {
+	width: 55px;
+	height: 40px;
+	padding-right: 10px;	
+}
+
+ 
+.name {
+	margin-top: 8px;
+	margin-bottom: 3px;
+	font-size: 17px;
+	font-weight: 600;
+} 
+
+#cleo-heading {
+	margin-top: 50px;
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.cleo1 {
+
+	width: 95%;
+	height:434px;
+	object-fit: cover;
+
+}
+
+.cleo {
+
+	width: 95%;
+	height:15vw;
+	object-fit: cover;
+
+}
+
+.car-pic {
+
+	width: 95%;
+	height:300;
+	object-fit: cover;
+
+}
+
+#no-bullets {
+	list-style-type: none;
+}
+
+.button-list {
+	cursor:pointer;
+	border:none;
+	outline:none;
+	width: 100%;
+	text-align: left;
+	background: transparent;
+	transition: 0.3s;
+	padding:8px;
+	margin:4px 0;
+	border-radius: 4px;
+}
+
+.button-list:hover{
+	background-color: rgba(211,211,211,0.3);
+}

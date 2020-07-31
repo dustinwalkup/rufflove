@@ -1,0 +1,19 @@
+{
+  "name": "ruff_love",
+  "version": "1.0.0",
+  "description": "Ruff Love Project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dustinwalkup/rufflove.git"
+  },
+  "author": "Dustin Walkup",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dustinwalkup/rufflove/issues"
+  },
+  "homepage": "https://github.com/dustinwalkup/rufflove#readme"
+}
