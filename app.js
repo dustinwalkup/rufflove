@@ -5,7 +5,7 @@ var handlebars = require('express-handlebars').create({defaultLayout:'main'});
 
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
-app.set('port', 7666);
+app.set('port', 7776);
 
 app.use(express.static('public'));
 
@@ -19,21 +19,26 @@ app.get('/other-page',function(req,res){
   res.render('other-page');
 });
 
-
-function genContext(){
-  var stuffToDisplay = {};
-  stuffToDisplay.time = (new Date(Date.now())).toLocaleTimeString('en-US');
-  return stuffToDisplay;
-}
-
-app.get('/time',function(req,res){
-  res.render('time', genContext());
+app.get('/cleo',function(req,res){
+  res.render('profile', {layout : 'main'});
+  console.log("cleos profile");
 });
 
-app.use(function(req,res){
-  res.status(404);
-  res.render('404');
+app.get('/myprofile',function(req,res){
+  res.render('khalissi', {layout : 'main'});
+  console.log("my profile");
 });
+
+app.get('/friends',function(req,res){
+  res.render('friends', {layout : 'main'});
+  console.log("friends");
+});
+
+
+
+
+
+
 
 app.use(function(err, req, res, next){
   console.error(err.stack);

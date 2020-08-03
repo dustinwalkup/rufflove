@@ -81,7 +81,7 @@ li {
 .cleo1 {
 
 	width: 95%;
-	height:434px;
+	height:600px;
 	object-fit: cover;
 
 }
@@ -112,7 +112,7 @@ li {
 	outline:none;
 	width: 100%;
 	text-align: left;
-	background: transparent;
+	background-color: transparent;
 	transition: 0.3s;
 	padding:8px;
 	margin:4px 0;
@@ -122,3 +122,28 @@ li {
 .button-list:hover{
 	background-color: rgba(211,211,211,0.3);
 }
+
+.button-list.active{
+	background-color:#fff;
+	color:#000;
+	border-radius:4px 4px 0 0;
+	margin:4px 0 0;
+}
+
+.panel {
+	background-color: rgba(255, 255, 255, 0.8);
+	color: #000;
+	border-radius: 0 0 4px 4px;
+	overflow:hidden;
+	opacity:0;
+	max-height:0;
+	transition:0.3s;
+	padding: 0 8px;
+	margin:0;
+}
+
+.panel.show {
+	opacity:1;
+	max-height:500px;
+	padding:8px;
+	margin: 2px 0 4px;		
